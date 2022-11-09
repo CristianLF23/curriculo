@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+
+html {
+    background: linear-gradient(45deg, #000000, hsl(217, 90%, 8%), #003c74, #002d61);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+    scroll-behavior: smooth;
+    padding-bottom: 5%;
+}
+
+.fotoPerfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.meuCard{
+    position: fixed;
+    background: linear-gradient(45deg,  #000000, hsl(217, 90%, 8%), #005eb5, #0059be);
+    background-size:400% 400%;
+    animation: colors 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 10px #00c3ff;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 5%;
+    margin-top: 2%;
+
+}
+
+.textoCard {
+    color: white;
+    font-family: raleway;
+    font-size: 20px;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.redes {
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes a{
+    transition: all 0.3s ease-in-out;
+}
+
+.redes a:hover {
+    box-shadow: 0 0 15px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    text-shadow: 0 0 15px rgb(0, 195, 255);
+    border-radius: 20px;
+}
+
+
+.cabecalho {
+    background-color: hsl(217, 90%, 8%);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+
+}
+
+.textoCabecalho{
+    font-family: raleway;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 1vh;
+    text-decoration: none;
+    color: inherit;
+}
+
+.textoCabecalho:hover {
+    box-shadow: 0 0 15px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    text-shadow: 0 0 15px rgb(0, 195, 255);
+}
+
+.divGeral {
+    display: grid;
+}
+
+.quemSouEu {
+    color: white;
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 35%;
+    margin-right: 10%;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    background-color:  #002d61;
+    border-radius: 20px;
+    padding: 3%;
+    font-family: raleway;
+}
+
+.quemSouEu h1 {
+    padding-bottom: 3%;
+    font-size: 60px;
+    
+}
+
+.quemSouEu p {
+    font-size: 25px;
+}
+
+.meusConhecimentos {
+    color: white;
+    margin-top: 2%;
+    text-align: left;
+    margin-left: 35%;
+    margin-right: 10%;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    background-color:  #002d61;
+    border-radius: 20px;
+    padding: 3%;
+    font-family: raleway;
+}
+
+.meusConhecimentos h1 {
+    padding-bottom: 3%;
+    font-size: 60px;
+}
+
+.meusConhecimentos p {
+    font-size: 25px;
+}
+
+.projetos {
+    color: white;
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-right: 10%;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    background-color:  #002d61;
+    border-radius: 20px;
+    padding: 3%;
+    font-family: raleway;
+}
+
+.projetos h1 {
+    padding-bottom: 3%;
+    font-size: 60px;
+    
+}
+
+.projetos img{
+    border-radius: 10px;
+    width: 450px;
+    height: 250px
+}
+
+.projetos img:hover {
+    box-shadow: 0 0 15px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario h1 {
+    font-size: 30px;
+}
+
+.formulario {
+    color: white;
+    margin-top: 2%;
+    text-align: left;
+    margin-left: 35%;
+    margin-right: 10%;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    background-color:  #002d61;
+    border-radius: 20px;
+    padding: 3%;
+    font-family: raleway;
+}
+
+.formulario input {
+    width: 40%;
+    height: 2rem;
+    padding: 1rem;
+    transition: all 0.8s ease-in-out;
+    border-radius: 20px;
+    border-style: hidden;
+}
+
+.formulario input:hover{
+    box-shadow: 0 0 15px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    transition: all 0.3s ease-out;
+}
+
+.formulario textarea {
+        min-height: 12.5rem;
+        resize: vertical;
+        width: 60%;
+        padding: 1.25rem;
+        border-radius: 20px;
+        border-style: hidden;
+        transition: all 0.3s ease-in-out;
+
+    }
+    
+.formulario textarea:hover{
+        box-shadow: 0 0 15px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    }
+
+.botaoForm {
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.botaoForm:hover {
+    box-shadow: 0 0 15px rgb(0, 195, 255), inset 0 0 15px rgb(0, 195, 255);
+    text-shadow: 0 0 15px rgb(0, 195, 255);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: darkgrey;
+}
+
+.success, .error{
+    text-align: center;
+}
+
+.success {
+    color: greenyellow
+}
+
+.error {
+    color: tomato;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+
+    .divGeral {
+        display: flex;
+        flex-direction: column;
+    }
+
+.meuCard{
+    position: inherit;
+    margin-top: 35%;
+    padding-right: 90px;
+    padding-bottom: 5%;
+}
+.textoCard {
+    color: white;
+    font-family: raleway;
+    font-size: 30px;
+}
+
+
+.cabecalho{
+    flex-direction: column;
+}
+
+.textoCabecalho {
+    font-size: 30px;
+}
+
+
+.quemSouEu{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.meusConhecimentos {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.meusConhecimentos h1 {
+    font-size: 45px;
+}
+
+.projetos {
+margin-left: 15px;
+margin-right: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.projetos img {
+    padding: 0;
+    width: 550px;
+    height: 450px;
+
+}
+
+.formulario{
+margin-left: 15px;
+margin-right: 15px;
+font-size: 25px;
+}
+
+.formulario input{
+    width: 90%;
+}
+
+.formulario textarea {
+    width: 90%;
+}
+
+.botaoForm {
+    font-size: 30px;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .divGeral {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.meuCard{
+    position: inherit;
+    margin-top: 50%;
+    width: 90%;
+    display: flex;
+    font-size: 5px;
+    
+}
+
+
+.cabecalho{
+    flex-direction: column;
+}
+
+.textoCabecalho {
+    font-size: 20px;
+}
+
+.textoCard {
+    font-size: 20px;
+}
+
+.quemSouEu{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.meusConhecimentos {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.meusConhecimentos h1 {
+    font-size: 45px;
+}
+
+.projetos {
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.projetos img {
+    width: 345px;
+    height: 250px;
+}
+
+.formulario{
+margin-left: 15px;
+margin-right: 15px;
+font-size: 25px;
+}
+
+.formulario input{
+    width: 90%;
+}
+
+.formulario textarea {
+    width: 90%;
+}
+
+.botaoForm {
+    font-size: 30px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .meuCard {
+        margin-top: 10%;
+        width: 29%;
+        height: 80vh;
+        min-height: 80%;
+        overflow-y: scroll;
+    }
+
+    .textoCard {
+        font-size: 22px;
+    }
+
+    .quemSouEu {
+        margin-top: 10%;
+    }
+
+    .formulario {
+        font-size: 25px;
+    }
+    .botaoForm{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .textoCabecalho {
+        font-size: 30px;
+    }
+    .meuCard {
+        margin-top: 6%;
+        width: 29%;
+        height: 80vh;
+        min-height: 80%;
+        overflow-y: scroll;
+    }
+
+    .meuCard h1 {
+        font-size: 25px;
+
+    }
+
+    .fotoPerfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .quemSouEu {
+        margin-top: 6%;
+    }
+
+    .projetos img {
+        width: 250px;
+        height: 150px;
+
+    }
+    .formulario {
+        font-size: 30px;
+        margin-bottom: none
+    }
+
+    .formulario input{
+        width: 90%;
+    }
+    .formulario textarea {
+        width: 90%;
+    }
+    
+    .botaoForm {
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (height: 800px) {
+    .meuCard{
+        min-height: 80%;
+        overflow-y: scroll;
+        height: 80vh;
+    }
+    .fotoPerfil{
+        height: 200px;
+        width: 200px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+    .meuCard {
+        height: auto;
+        overflow: hidden;
+        min-height: 80%;
+    }
+}
